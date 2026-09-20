@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TaxpayerProfile>
+    <PAN>ABCDE1234F</PAN>
+    <Name>
+        <First>Rahul</First>
+        <Last>Sharma</Last>
+    </Name>
+    <DOB>15/08/1990</DOB>
+    <AnnualIncome>185000.00</AnnualIncome>
+    <Status code="1">ACTIVE</Status>
+</TaxpayerProfile>

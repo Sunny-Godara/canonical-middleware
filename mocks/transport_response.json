@@ -1,0 +1,11 @@
+{
+  "dl_num": "DL-0420110012345",
+  "holder_name": "Rahul Sharma",
+  "dob": "1990-08-15",
+  "reg_vehicles": [
+    {
+      "plate": "DL-1C-AA1111",
+      "vehicle_class": "LMV-TWO_WHEELER"
+    }
+  ]
+}

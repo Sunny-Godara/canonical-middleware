@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  middleware-api:
+    build: .
+    container_name: interoperability_middleware
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app/app
+      - ./configs:/app/configs
+    environment:
+      - ENV=development
+
+  # Placeholders for mock department APIs
+  mock-revenue:
+    image: python:3.11-slim
+    container_name: mock_revenue_service
+    command: python -m http.server 8001
+    volumes:
+      - ./mocks:/mocks
+    working_dir: /mocks
+    ports:
+      - "8001:8001"
+
+  mock-transport:
+    image: python:3.11-slim
+    container_name: mock_transport_service
+    command: python -m http.server 8002
+    volumes:
+      - ./mocks:/mocks
+    working_dir: /mocks
+    ports:
+      - "8002:8002"
